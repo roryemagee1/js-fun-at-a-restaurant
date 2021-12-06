@@ -94,7 +94,7 @@ function removeMenuItem(restaurant, itemName, itemType) {
     if (restaurant.menus[itemType][i].name === itemName) {
       statement = `No one is eating our ${restaurant.menus[itemType][i].name} - it has been removed from the ${itemType} menu!`
       restaurant.menus[itemType].splice(i, 1);
-    }
+    };
   };
   return statement;
 };
